@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Colin Ray Tarkington | Cybersecurity Portfolio</title>
+<style>
+:root{--bg:#0b1020;--card:#131b31;--text:#eef3ff;--muted:#aab6d3;--accent:#ff8200;--line:#283451}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+nav{position:sticky;top:0;z-index:10;background:rgba(11,16,32,.95);border-bottom:1px solid var(--line);padding:14px 7%;display:flex;justify-content:space-between;align-items:center;gap:20px}
+nav strong{color:var(--accent)} nav a{color:var(--text);text-decoration:none;margin-left:18px;font-size:.95rem}
+header{min-height:78vh;display:flex;align-items:center;padding:70px 9%;background:linear-gradient(135deg,#0b1020,#16213c)}
+.hero{max-width:850px}.eyebrow{color:var(--accent);font-weight:bold;letter-spacing:2px;text-transform:uppercase}
+h1{font-size:clamp(2.8rem,7vw,5.5rem);line-height:1;margin:.2em 0}.hero p{font-size:1.25rem;color:var(--muted);max-width:760px}
+.btn{display:inline-block;padding:12px 18px;border-radius:8px;background:var(--accent);color:#111;text-decoration:none;font-weight:bold;margin:8px 8px 0 0;border:0;cursor:pointer}
+.btn.alt{background:transparent;color:var(--text);border:1px solid var(--line)}
+section{padding:70px 9%;max-width:1250px;margin:auto} h2{font-size:2.2rem;margin-bottom:10px} .lead{color:var(--muted);max-width:850px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:20px;margin-top:28px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px}.card h3{margin-top:0}.card p,.card li{color:var(--muted)}
+.tag{display:inline-block;border:1px solid var(--line);padding:6px 10px;border-radius:999px;margin:4px;font-size:.9rem}
+.timeline{border-left:2px solid var(--accent);padding-left:24px}.job{margin-bottom:34px}.job small{color:var(--accent)}
+.linkbox{margin-top:15px;padding:13px;border:1px dashed #657293;border-radius:8px;color:#cbd5ec;cursor:pointer}
+.linkbox:hover{border-color:var(--accent)} footer{text-align:center;padding:35px;color:var(--muted);border-top:1px solid var(--line)}
+
+
+ @media(max-width:800px){nav .links{display:none}section,header{padding-left:6%;padding-right:6%}}
+
+.hero-layout{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(260px,.55fr);gap:48px;align-items:center;width:100%}
+.hero-photo-wrap{display:flex;justify-content:center}
+.hero-photo{width:min(100%,340px);max-height:470px;object-fit:cover;object-position:center 35%;border-radius:18px;border:1px solid var(--line);box-shadow:0 20px 55px rgba(0,0,0,.38)}
+@media(max-width:800px){.hero-layout{grid-template-columns:1fr}.hero-photo{width:min(78vw,330px);max-height:430px}.hero-photo-wrap{margin-top:22px}}
+
+</style>
+</head>
+<body>
+<nav><strong>CT // CYBERSECURITY</strong><div class="links"><a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#resume">Resume</a><a href="#contact">Connect</a></div></nav>
+
+<header id="home"><div class="hero-layout"><div class="hero">
+<div class="eyebrow">Cybersecurity • Information Security • Threat Detection</div>
+<h1>Colin Ray Tarkington</h1>
+<p>Information Security student at the University of Tennessee, Knoxville with hands-on cybersecurity experience at Oak Ridge National Laboratory and Shaw Industries. Focused on detection engineering, vulnerability research, threat modeling, SIEM operations, and secure system design.</p>
+<a class="btn" href="#projects">Explore My Work</a><a class="btn alt" href="#contact">Connect With Me</a>
+</div><div class="hero-photo-wrap"><img class="hero-photo" src="Colin_Tarkington_Profile.jpeg" alt="Professional portrait of Colin Tarkington"></div></div></header>
+
+<section id="about"><h2>About Me</h2>
+<p class="lead">I am a Senior pursuing a B.S. in Information/Cyber Security at the University of Tennessee, Knoxville, with an anticipated graduation date of May 2027. My experience spans enterprise cyber operations and embedded/IoT security research. I have worked with Microsoft Sentinel, KQL, Microsoft Entra ID, MITRE ATT&CK, vulnerability assessment, network traffic analysis, and controlled attack simulation.</p>
+<div class="grid"><div class="card"><h3>Education</h3><p><b>University of Tennessee, Knoxville</b><br>B.S. Information/Cyber Security • Anticipated May 2027<br>GPA: 3.8</p><p><b>Pellissippi State Community College</b><br>A.S. Computer Science • June 2025<br>GPA: 3.5</p></div>
+<div class="card"><h3>Career Focus</h3><p>Security operations, threat detection, vulnerability research, detection engineering, threat modeling, and secure system design.</p></div></div></section>
+
+<section id="experience"><h2>Experience</h2><div class="timeline">
+<div class="job"><small>JUNE 2026 – AUGUST 2026</small><h3>Cyber Operations Intern — Shaw Industries</h3><p>Worked directly in an enterprise cybersecurity environment focused on detection engineering, threat research, and security architecture. I researched adversary techniques and mapped behaviors to the MITRE ATT&amp;CK framework, then translated those behaviors into Microsoft Sentinel detections using KQL. My detection work covered identity attacks, risky authentication, MFA abuse, privilege escalation, suspicious PowerShell execution, malicious inbox-rule activity, and account-takeover scenarios. I also developed monitoring logic to identify server heartbeat failures and log-ingestion gaps, collaborated with senior cybersecurity engineers to refine alert thresholds and reduce false positives, and created technical documentation and presentations for security and architecture review. In addition, I designed a dedicated Kali Linux purple-team sandbox intended to give security teams a controlled, isolated, and auditable environment for detection validation and authorized testing.</p></div>
+<div class="job"><small>JUNE 2025 – DECEMBER 2025</small><h3>Embedded Systems Research Intern — Oak Ridge National Laboratory</h3><p>Conducted hands-on cybersecurity research focused on embedded systems, IoT devices, and smart-home environments. I monitored and analyzed over-the-air network transmissions to identify anomalies and potential attack vectors, performed vulnerability research on connected devices, and developed automated scripts that simulated realistic user interactions to evaluate device behavior and resilience. I used cybersecurity tooling to build controlled attack scenarios, performed data-driven assessments of potential weaknesses, and worked with researchers to evaluate mitigation strategies and improve the security posture of IoT systems.</p></div>
+<div class="job"><small>JUNE 2024 – AUGUST 2024</small><h3>Embedded Systems Research Intern — Oak Ridge National Laboratory</h3><p>Conducted smart-home vulnerability assessments, worked with cybersecurity and electronics tools, developed attack scenarios, and produced a research paper and poster presentation.</p></div>
+</div></section>
+
+<section id="projects"><h2>Projects & Work Samples</h2>
+<div class="grid">
+<div class="card"><h3>Threat Detection Model — Payroll Fraud & Account Takeover</h3><p><b>Objective:</b> Detect identity-focused attacks and financially motivated payroll-fraud activity before business impact occurs.</p><p><b>Role & process:</b> Built seven Microsoft Sentinel/KQL detection use cases across SigninLogs, AuditLogs, OfficeActivity, and DeviceProcessEvents, mapping activity to MITRE ATT&CK and covering risky authentication, account manipulation, MFA registration, inbox rules, PowerShell, and privileged role assignments.</p><div class="linkbox"><a style="color:#ff8200;text-decoration:none;font-weight:bold" target="_blank" href="Colin_Tarkington_Threat_Detection_Model.pdf">View Detection Model →</a></div></div>
+<div class="card"><h3>Kali Linux Purple-Team Test Platform</h3><p><b>Objective:</b> Design a dedicated, isolated, and auditable environment for controlled purple-team testing and detection validation.</p><p><b>Role & process:</b> Proposed a Windows 11/Hyper-V host with a standalone Kali VM, MFA/GSA/RDP management path, default-deny firewalling, PAM credential handling, SIEM logging, network segmentation, access governance, and documented data flows and lifecycle controls.</p><div class="linkbox"><a style="color:#ff8200;text-decoration:none;font-weight:bold" target="_blank" href="Colin_Tarkington_Purple_Team_Architecture.pdf">View Architecture Proposal →</a></div></div>
+<div class="card"><h3>IoT Security Assessment — Ring Doorbell Camera V.2</h3><p><b>Objective:</b> Evaluate potential network-side weaknesses in a consumer smart-home security device.</p><p><b>Role & process:</b> Used Wireshark for packet analysis, Nmap for port scanning, and controlled denial-of-service testing. Observed encrypted network traffic, refused/ignored port-scan states, and loss of live camera connectivity during the controlled deauthentication test.</p><div class="linkbox"><a style="color:#ff8200;text-decoration:none;font-weight:bold" target="_blank" href="Colin_Tarkington_IoT_Ring_Security_Assessment.pdf">View IoT Research Poster →</a></div></div>
+</div>
+</div></section>
+
+<section id="skills"><h2>Technical Skills</h2><div class="card">
+<span class="tag">Microsoft Sentinel</span><span class="tag">KQL</span><span class="tag">Microsoft Entra ID</span><span class="tag">Microsoft Defender</span><span class="tag">MITRE ATT&CK</span><span class="tag">Detection Engineering</span><span class="tag">Threat Modeling</span><span class="tag">SIEM Operations</span><span class="tag">Wireshark</span><span class="tag">Nmap</span><span class="tag">Metasploit</span><span class="tag">Bettercap</span><span class="tag">Aircrack-ng</span><span class="tag">Python</span><span class="tag">C/C++</span><span class="tag">HTML/CSS</span>
+</div></section>
+
+<section id="resume"><h2>Resume</h2><p class="lead">View or download my current resume to learn more about my education, cybersecurity experience, employment history, leadership, and technical background.</p><a class="btn" id="resumeLink" href="Colin_Tarkington_Resume.pdf" target="_blank">View Resume</a></section>
+
+<section id="contact"><h2>Let's Connect</h2><p class="lead">Interested in discussing cybersecurity, research, or professional opportunities? Feel free to reach out.</p>
+<div class="grid"><div class="card"><h3>Email</h3><p>ctarkin1@vols.utk.edu</p><a class="btn alt" href="mailto:ctarkin1@vols.utk.edu">Send Email</a></div>
+<div class="card"><h3>LinkedIn</h3><p>Connect professionally and view my latest experience.</p><a class="btn alt" id="linkedinLink" href="https://www.linkedin.com/in/colintarkington" target="_blank">Visit LinkedIn</a></div>
+</div></section>
+
+<footer>© 2026 Colin Ray Tarkington • Cybersecurity Portfolio</footer>
+
+
+
+</body></html>
